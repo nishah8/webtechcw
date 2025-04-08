@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Choose Your Spaceship!</title>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .choice {
+        margin: 20px;
+    }
+    .choice img {
+        width: 300px;
+        height: 200px;
+        cursor: pointer;
+        border: 2px solid white;
+    }
+    .choice button {
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+    }
+</style>
+</head>
+<body>
+<h1>Scenario: You need to leave Earth and move to another planet, what spaceship do you choose?</h1>
+<div class="container">
+    <div class="choice">
+        <a href="Page 2 ( Fail 1).html">
+            <img src="Image 1.jpg" alt="Path 1">
+        </a>
+        <button onclick="location.href='Page 2 ( Fail 1).html'">Take Spaceship 1</button>
+    </div>
+    <div class="choice">
+        <a href="Page 3 (Win 1).html">
+            <img src="Image 3.jpg" alt="Path 2">
+        </a>
+        <button onclick="location.href='Page 3 (Win 1).html'">Take Spaceship 2</button>
+    </div>
+</div>
+</body>
+</html>
