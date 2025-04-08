@@ -1,0 +1,64 @@
+
+
+body {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color:pink;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+}
+.choice{
+    display:inline-block;
+    margin-left:100px ;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+.hoverImage{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+}
+
+.choiceparagraphs {
+    margin-top:100px ;
+    margin-bottom: 100px;
+}
+
+.gameoverreturn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gameoverreturn button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.choicebuttons {
+   
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  
+}
