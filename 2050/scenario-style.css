@@ -6,12 +6,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;  /* Single, unified background color */
-  color: #2c2c2c;                /* Default text color for good contrast */
+    font-family: Arial, sans-serif;
+    background: url("images/tech-border.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #2c2c2c; 
 }
 
-/* NAVIGATION BAR */
+/* Navigation Bar */
 .navbar {
   background-color: #333;
   color: #fff;
@@ -68,11 +69,11 @@ body {
   background-color: #555;
 }
 
-/* MAIN CONTENT */
+/* Main Content */
 main {
   max-width: 700px;
   margin: 20px auto;
-  background: transparent; /* Remove the white background */
+  background: transparent;
   padding: 20px;
   border-radius: 0;
 }
@@ -96,7 +97,7 @@ main {
 
 .previous-choice {
   font-style: italic;
-  color: #ccc;  /* Light grey for readability on dark background */
+  color: #ccc; 
 }
 
 /* Description Area */
@@ -112,7 +113,7 @@ main {
   margin: 0 auto; /* Centers the container */
 }
 
-/* The image styling */
+/* Image styling */
 .scenario-image {
   width: 100%;
   height: auto;
@@ -127,7 +128,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5); 
   color: #fff;
   display: flex;
   justify-content: center;
@@ -135,15 +136,6 @@ main {
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
-}
-
-/* (Optional) Scenario description style if used outside overlay */
-.scenario-description {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
-  max-width: 500px;
-  margin: 0 auto;
 }
 
 /* Choices Section */
@@ -213,6 +205,6 @@ main {
 }
 
 .nav-button:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
