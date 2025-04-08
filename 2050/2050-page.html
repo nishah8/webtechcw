@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>2050 Scenario - Time Machine Adventures</title>
+  <!-- Link to the 2050-specific CSS file -->
+  <link rel="stylesheet" href="scenario-style.css">
+</head>
+
+<!-- 1) Call retrieveLastDecision() when the page loads -->
+<body onload="retrieveLastDecision()">
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Menu Icon -->
+      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+      <!-- Site Title -->
+      <span class="nav-title">Time Machine Adventures</span>
+      <!-- Dropdown Menu -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Other Time Eras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Scenario Header Info -->
+    <section class="scenario-header">
+      <h2 id="year-time">2050</h2>
+      <h3 id="adventure-title">Virtual Reality Escape</h3>
+      <!-- 2) This will be dynamically updated by retrieveLastDecision() -->
+      <p class="previous-choice">Previous Choice: [Your Last Decision]</p>
+    </section>
+
+    <!-- Description / Image Area with Overlay Text -->
+    <section class="description-area">
+      <div class="image-container">
+        <img src="images/placeholder.png" alt="Scenario Image" class="scenario-image">
+        <div class="overlay">
+          <p>You enter a futuristic virtual reality world. The Utopians invite you to join their peaceful society. You are promised a life of prosperity but with restrictions.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Choices Section -->
+<section class="choices">
+  <div class="choice">
+    <p class="choice-text">You accept the offer, living a controlled life in blissful peace.</p>
+    <button class="choice-button" id="choice1Btn" onclick="localStorage.setItem('lastDecision', '2050 - Virtual Revolution: Choice 1 Dead End'); window.location.href='2050-deadend.1/2050-deadend.1.html';">
+      ▼
+    </button>
+  </div>
+  <div class="choice">
+    <p class="choice-text">You reject The Utopians and join The Nomads, who promise freedom and adventure, but life is unstable and chaotic.</p>
+    <button class="choice-button" id="choice2Btn" onclick="localStorage.setItem('lastDecision', '2050 - Virtual Revolution: Choice 2 Survived'); window.location.href='2050-survived.1/2050-survived.1.html';">
+      ▼
+    </button>
+  </div>
+</section>
+
+
+  <script src="scenario-script.js"></script>
+</body>
+</html>

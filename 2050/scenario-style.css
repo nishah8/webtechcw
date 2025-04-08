@@ -1,0 +1,218 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;  /* Single, unified background color */
+  color: #2c2c2c;                /* Default text color for good contrast */
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Dropdown Menu */
+.nav-links {
+  list-style: none;
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  border-bottom: 1px solid #555;
+}
+
+.nav-links li:last-child {
+  border-bottom: none;
+}
+
+.nav-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 700px;
+  margin: 20px auto;
+  background: transparent; /* Remove the white background */
+  padding: 20px;
+  border-radius: 0;
+}
+
+/* Scenario Header */
+.scenario-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#year-time {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#adventure-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.previous-choice {
+  font-style: italic;
+  color: #ccc;  /* Light grey for readability on dark background */
+}
+
+/* Description Area */
+.description-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for image and overlay */
+.image-container {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* The image styling */
+.scenario-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* (Optional) Scenario description style if used outside overlay */
+.scenario-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Choices Section */
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Each choice container to center text and button */
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.choice-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px; /* Spacing between text and button */
+}
+
+.choice-button:hover {
+  background-color: #555;
+}
+
+/* Utility class for toggling visibility */
+.show {
+  display: block !important;
+}
+
+/* Dead End Navigation Section */
+.deadend-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.nav-arrow {
+  flex: 1;
+}
+
+.left-arrow {
+  text-align: left;
+}
+
+.right-arrow {
+  text-align: right;
+}
+
+.nav-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+

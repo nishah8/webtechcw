@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2050-deadend.2 - Time Machine Adventures</title>
+  <link rel="stylesheet" href="../../scenario-style.css">
+</head>
+<body onload="retrieveLastDecision()">
+  <header>
+    <nav class="navbar">
+      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+      <span class="nav-title">Time Machine Adventures</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/coursework-test/index.html">Home</a></li>
+        <li><a href="#">Other Time Eras</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="scenario-header">
+      <h2 id="year-time">2050</h2>
+      <h3 id="adventure-title">Virtual Reality Escape - Dead End</h3>
+      <p class="previous-choice">Previous Choice: [Your Last Decision]</p>
+    </section>
+    <section class="description-area">
+      <div class="image-container">
+        <img src="../../images/placeholder.png" alt="Scenario Image" class="scenario-image">
+        <div class="overlay">
+          <p>The revolution succeeds; however, you and your friends are erased from the digital world.</p>
+        </div>
+      </div>
+    </section>
+    <section class="deadend-navigation">
+      <div class="nav-arrow left-arrow">
+        <button class="nav-button" onclick="window.location.href='../2050-survived.1.html'">
+          &larr; Back to previous choice
+        </button>
+      </div>
+      <div class="nav-arrow right-arrow">
+        <button class="nav-button" onclick="window.location.href='../../../index.html'">
+          Back to timeline &rarr;
+        </button>
+      </div>
+    </section>
+  </main>
+  <script src="../../scenario-script.js"></script>
+</body>
+</html>

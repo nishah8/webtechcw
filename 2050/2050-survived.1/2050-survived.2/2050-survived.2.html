@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2050-survived.2 - Time Machine Adventures</title>
+  <!-- Go up two levels to load the shared CSS file -->
+  <link rel="stylesheet" href="../../scenario-style.css">
+</head>
+<body onload="retrieveLastDecision()">
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Menu Icon -->
+      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+      <!-- Site Title -->
+      <span class="nav-title">Time Machine Adventures</span>
+      <!-- Dropdown Menu -->
+      <ul class="nav-links" id="navLinks">
+        <!-- Using an absolute path here or adjust as needed -->
+        <li><a href="/coursework-test/index.html">Home</a></li>
+        <li><a href="#">Other Time Eras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Scenario Header Info -->
+    <section class="scenario-header">
+      <h2 id="year-time">2050</h2>
+      <h3 id="adventure-title">Virtual Reality Escape - Final Outcome</h3>
+      <p class="previous-choice">Previous Choice: [Your Last Decision]</p>
+    </section>
+
+    <!-- Description / Image Area with Overlay Text -->
+    <section class="description-area">
+      <div class="image-container">
+        <!-- Go up two levels to access the shared images folder -->
+        <img src="../../images/placeholder.png" alt="Scenario Image" class="scenario-image">
+        <div class="overlay">
+          <p>You succeed and bring harmony, creating a new reality between the virtual and the real world.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Navigation Section: Only one button -->
+    <section class="final-navigation">
+      <div class="final-button">
+        <button class="nav-button" onclick="window.location.href='../../../index.html'">
+          choose what timeline you want to experience next!
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Load shared JS from the 2050 folder -->
+  <script src="../../scenario-script.js"></script>
+</body>
+</html>
+

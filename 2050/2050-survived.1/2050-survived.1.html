@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2050-survived.1 - Time Machine Adventures</title>
+  <!-- Link to the CSS file in the parent folder -->
+  <link rel="stylesheet" href="../scenario-style.css">
+</head>
+<body onload="retrieveLastDecision()">
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <!-- Hamburger Menu Icon -->
+      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+      <!-- Site Title -->
+      <span class="nav-title">Time Machine Adventures</span>
+      <!-- Dropdown Menu -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#">Other Time Eras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Scenario Header Info -->
+    <section class="scenario-header">
+      <h2 id="year-time">2050</h2>
+      <h3 id="adventure-title">Virtual Reality Escape - Continued</h3>
+      <p class="previous-choice">Previous Choice: [Your Last Decision]</p>
+    </section>
+
+    <!-- Description / Image Area with Overlay Text -->
+    <section class="description-area">
+      <div class="image-container">
+        <img src="images/placeholder.png" alt="Scenario Image" class="scenario-image">
+        <div class="overlay">
+          <p>You participate in a virtual revolution to fight for freedom.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choices Section for Options -->
+    <section class="choices">
+      <div class="choice">
+        <p class="choice-text">
+          The revolution succeeds; however, you and your friends are erased from the digital world.
+        </p>
+        <button class="choice-button" id="option1Btn"
+          onclick="localStorage.setItem('lastDecision', '2050-survived.1: Choice 1 -> Dead End'); window.location.href='2050-deadend.2/2050-deadend.2.html';">
+          ▼
+        </button>
+      </div>
+      <div class="choice">
+        <p class="choice-text">
+          You try to make peace between The Utopians and The Nomads, attempting to blend the two worlds.
+        </p>
+        <button class="choice-button" id="option2Btn"
+          onclick="localStorage.setItem('lastDecision', '2050-survived.1: Choice 2 -> Survived'); window.location.href='2050-survived.2/2050-survived.2.html';">
+          ▼
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../scenario-script.js"></script>
+</body>
+</html>
