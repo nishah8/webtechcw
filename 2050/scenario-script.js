@@ -1,4 +1,4 @@
-//hamburger menu
+/* hamburger menu */
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const navLinks = document.getElementById("navLinks");
 
@@ -6,7 +6,7 @@ hamburgerBtn.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-//Retrieve and display the last clicked decision
+/* Retrieve and display the last clicked decision */
 function retrieveLastDecision() {
   const lastDecision = localStorage.getItem('lastDecision');
   if (lastDecision) {
@@ -14,7 +14,7 @@ function retrieveLastDecision() {
   }
 }
 
-//Choice Buttons
+/* Choice Buttons */
 const choice1Btn = document.getElementById("choice1Btn");
 const choice2Btn = document.getElementById("choice2Btn");
 
@@ -32,6 +32,5 @@ choice2Btn.addEventListener("click", () => {
   window.location.href = "2050-survived.1/2050-survived.1.html";
 });
 
-// 3) Option A: Call retrieveLastDecision() once the DOM is loaded
 document.addEventListener('DOMContentLoaded', retrieveLastDecision);
 
