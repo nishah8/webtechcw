@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <title>Interactive Story</title> 
+        <link rel="stylesheet" href="stylesheet_n.css">
+    </head> 
+    <body> 
+        <h1>Land Before Humans</h1> 
+        <div id="story"> 
+            <p>You have landed in a clearing of a beautiful forest. So many trees and flowers that you have never seen before! There is thump thump and what do you see a triceratops and a curious raptor approaching. who do you go and pet?</p> </div> 
+            <button class="image-button" onclick="continueStory('Triceratops')"> <img src="triceratops.png" alt="Triceratops"> </button> 
+            <button class="image-button" onclick="continueStory('Raptor')"> <img src="raptor.png" alt="Raptor"> </button>
+        </div>
+
+        <div id="links">
+            <a href="javascript:history.back()">Go Back</a>
+            <a href="index.html">Exit</a>      
+        </div>
+
+        <script>
+            function continueStory(choice) {
+                if (choice === 'Triceratops') {
+                    window.location.href = "n2.html"; 
+                } else if (choice === 'Raptor') {
+                    window.location.href = "n3.html"; 
+                }
+            }
+        </script>
+    </body>
+</html>

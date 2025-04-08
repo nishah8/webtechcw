@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <title>Interactive Story</title> 
+        <link rel="stylesheet" href="stylesheet_n.css">
+    </head> 
+    <body> 
+        <h1>Land Before Humans</h1> 
+
+        <div id="story"> 
+            <p>Great choice! Triceratops is really friendly and responds to your touch with a sweet purr. He realises that you are in danger from the raptor so nudges you to move aside and fights with the raptor. 
+                Raptor is a worthy opponent. if the triceratops keeps fighting he might get seriously wounded. What would you do next? 
+            </p> 
+        </div> 
+
+        <div id="button-container">
+            <button class="choice-button" onclick="continueStory('Triceratops')">Let Him Fight</button> 
+            <button class="choice-button" onclick="continueStory('ClimbRun')">Climb the Triceratops and Run!</button>
+        </div>
+
+
+        <div id="links">
+            <a href="javascript:history.back()">Go Back</a> 
+            <a href="index.html">Exit</a> 
+        </div>
+
+        <script>
+            function continueStory(choice) {
+                if (choice === 'Triceratops') {
+                    window.location.href = "n4.html"; 
+                } else if (choice === 'ClimbRun') {
+                    window.location.href = "n5.html"; 
+                }
+            }
+        </script>
+    </body>
+</html>
