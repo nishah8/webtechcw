@@ -18,5 +18,19 @@
             <a href="javascript:history.back()">Go Back</a> 
             <a href="index.html">Exit</a> 
         </div>
+        
+        <audio id="sad-sound" src="game-over.mp3"></audio>
+
+        <script>
+            const sadSound = document.getElementById('sad-sound');
+  
+            document.body.addEventListener('mousemove', () => {
+                sadSound.play();
+              });
+  
+            sadSound.addEventListener('ended', () => {
+               sadSound.currentTime = 0;
+              });
+          </script>
     </body>
 </html>
