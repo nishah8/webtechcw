@@ -88,7 +88,7 @@ body {
 }
 
 /* Navbar original */
-.navbar {
+.navbarIndex {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +102,7 @@ body {
     text-decoration: none;
 }
 
-.hamburger {
+.hamburgerIndex {
     font-size: 30px;
     background: none;
     color: white;
@@ -110,7 +110,7 @@ body {
     cursor: pointer;
 }
 
-.menu {
+.menuIndex {
     display: none;
 }
 
@@ -129,7 +129,7 @@ body {
     color: white;
 }
 
-.title {
+.titleIndex {
     color: white;
     font-size: 24px;
     font-weight: bold;
