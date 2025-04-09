@@ -13,54 +13,64 @@ body {
 }
 
 /* Navigation Bar */
-.navbar {
-  background-color: #333;
-  color: #fff;
+.navbarI {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
+  background-color: #333;
   padding: 10px 20px;
 }
 
-.hamburger {
-  background: none;
-  border: none;
-  color: #fff;
+.logoI {
+  color: white;
   font-size: 24px;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
-.nav-title {
-  font-size: 20px;
+  text-decoration: none;
   font-weight: bold;
+  position: absolute; 
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Dropdown Menu */
-.menu {
+.hamburgerI {
+  font-size: 30px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-linksI {
+  list-style-type: none;
   display: none; /* Hidden by default */
+  flex-direction: column;
+  gap: 20px;
 }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
+.nav-linksI.show {
+  display: flex; /* Show when toggled */
 }
 
-.menu ul li {
-  padding: 10px;
-  text-align: center;
+.nav-linksI li {
+  display: inline-block; 
 }
 
-.menu ul li a {
+.nav-linksI a {
   text-decoration: none;
   color: white;
+  font-size: 16px;
 }
 
-.title {
+.nav-linksI a:hover {
+  text-decoration: underline; 
+}
+
+.titleI {
   color: white;
   font-size: 24px;
   font-weight: bold;
 }
+
 
 /* Main Content */
 main {
@@ -138,7 +148,6 @@ main {
   margin-top: 30px;
 }
 
-/* Each choice container to center text and button */
 .choice {
   display: flex;
   flex-direction: column;
@@ -162,12 +171,11 @@ main {
   background-color: #555;
 }
 
-/* Utility class for toggling visibility */
 .show {
   display: block !important;
 }
 
-/* Dead End Navigation Section */
+/* Deadend */
 .deadend-navigation {
   display: flex;
   justify-content: space-between;
