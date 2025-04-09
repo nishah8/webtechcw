@@ -20,10 +20,11 @@ body {
     padding: 10px 20px;
 }
 
-.home-btn {
+.logo {
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hamburger {
@@ -34,29 +35,47 @@ body {
     cursor: pointer;
 }
 
-.menu {
-    display: none;
+.nav-links {
+    list-style-type: none;
+    display: flex; /* Default desktop layout */
+    gap: 20px; /* Space between links */
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
+.nav-links li {
+    display: inline-block; /* Keep links inline */
 }
 
-.menu ul li {
-    padding: 10px;
-    text-align: center;
-}
-
-.menu ul li a {
+.nav-links a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Hover effect for links */
 }
 
 .title {
     color: white;
     font-size: 24px;
     font-weight: bold;
+}
+
+/* Mobile responsive styles for the navigation bar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #333; /* Match navbar color */
+        position: absolute; /* Position below navbar */
+        top: 60px; /* Adjust based on navbar height */
+        right: 0; 
+        width: 100%; /* Full width on mobile */
+        padding-top: 10px; /* Add spacing */
+        z-index: 1000; /* Ensure it appears above other content */
+        box-shadow: rgba(0,0,0,0.2) -2px -2px ;
+  
+}
 }
 
 /* Main Content Section */
