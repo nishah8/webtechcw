@@ -12,7 +12,7 @@ body {
 }
 
 /* Navigation Bar */
-.navbar {
+.navbarI {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@ body {
     padding: 10px 20px;
 }
 
-.logo {
+.logoI {
     color: white;
     font-size: 24px;
     text-decoration: none;
@@ -29,7 +29,7 @@ body {
     text-align: center; 
 }
 
-.hamburger {
+.hamburgerI {
     font-size: 30px;
     background: none;
     color: white;
@@ -37,32 +37,32 @@ body {
     cursor: pointer;
 }
 
-.nav-links {
+.nav-linksI {
     list-style-type: none;
     display: none; 
     flex-direction: column;
     gap: 20px;
 }
 
-.nav-links.show {
+.nav-linksI.show {
     display: flex; /* Show the nav links when the 'show' class is applied */
 }
 
-.nav-links li {
+.nav-linksI li {
     display: inline-block; 
 }
 
-.nav-links a {
+.nav-linksI a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
 
-.nav-links a:hover {
+.nav-linksI a:hover {
     text-decoration: underline; 
 }
 
-.title {
+.titleI {
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -70,7 +70,7 @@ body {
 
 /* Mobile responsive styles for the navigation bar */
 @media (max-width: 768px) {
-    .nav-links {
+    .nav-linksI {
         display: none; /* Hide menu by default on mobile */
         flex-direction: column; /* Stack items vertically */
         background-color: #333; /* Match navbar color */
@@ -83,6 +83,54 @@ body {
         box-shadow: rgba(0,0,0,0.2) -2px -2px ;
   
 }
+}
+
+/* Navbar original */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.home-btn {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hamburger {
+    font-size: 30px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Main Content Section */
