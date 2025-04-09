@@ -25,6 +25,8 @@ body {
     font-size: 24px;
     text-decoration: none;
     font-weight: bold;
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 .hamburger {
@@ -37,12 +39,12 @@ body {
 
 .nav-links {
     list-style-type: none;
-    display: flex; /* Default desktop layout */
-    gap: 20px; /* Space between links */
+    display: flex; 
+    gap: 20px;
 }
 
 .nav-links li {
-    display: inline-block; /* Keep links inline */
+    display: inline-block; 
 }
 
 .nav-links a {
@@ -52,7 +54,7 @@ body {
 }
 
 .nav-links a:hover {
-    text-decoration: underline; /* Hover effect for links */
+    text-decoration: underline; 
 }
 
 .title {
