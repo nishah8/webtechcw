@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: url("images/tech-border.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #2c2c2c; 
+  font-family: Arial, sans-serif;
+  background: url("images/tech-border.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #2c2c2c; 
 }
 
 /* Navigation Bar */
@@ -36,37 +36,30 @@ body {
   font-weight: bold;
 }
 
-* Dropdown Menu */
-.nav-links {
-  list-style: none;
+/* Dropdown Menu */
+.menu {
   display: none; /* Hidden by default */
-  position: absolute;
-  top: 50px;
-  left: 10px;
-  background-color: #444;
-  border-radius: 5px;
-  width: 150px;
+}
+
+.menu ul {
+  list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.nav-links li {
-  border-bottom: 1px solid #555;
-}
-
-.nav-links li:last-child {
-  border-bottom: none;
-}
-
-.nav-links a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
+.menu ul li {
   padding: 10px;
+  text-align: center;
 }
 
-.nav-links a:hover {
-  background-color: #555;
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Main Content */
@@ -205,6 +198,5 @@ main {
 }
 
 .nav-button:hover {
-    background-color: #555;
+  background-color: #555;
 }
-
