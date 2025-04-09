@@ -20,20 +20,8 @@
             <a href="javascript:history.back()">Go Back</a> 
             <a href="index.html">Exit</a>
         </div>
-        <audio id="happy" src="happy.mp3"></audio>
+        <audio id="music" src="happy.mp3"></audio>
 
-        <script>
-            const happy = document.getElementById('happy');
-  
-            document.body.addEventListener('mousemove', () => {
-
-                happy.play();
-            });
-  
-
-            happy.addEventListener('ended', () => {
-                happy.currentTime = 0;
-            });
-        </script>
+        <script src="MouseSound.js"></script>
     </body>
 </html>
