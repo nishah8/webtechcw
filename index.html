@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time Machine Adventures</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <!-- Navigation Bar -->
   <header>
-  <span class="logoI">Time Machine Adventures</span>
-  <nav class="navbarI">
-    <div class="container">
-      <button class="hamburgerI" id="hamburgerI" aria-label="Toggle Menu">
-        &#9776;
-      </button>
-      <ul class="nav-linksI hidden" id="menu">
-        <li><a href="Meet-The-Developers.html">Meet The Developers</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+    <!-- Logo centered at the top -->
+    <span class="logoI">Time Machine Adventures</span>
+    <nav class="navbarI">
+      <div class="container">
+        <button class="hamburgerI" id="hamburgerI" aria-label="Toggle Menu">
+          &#9776;
+        </button>
+        <ul class="nav-linksI hidden" id="menu">
+          <li><a href="Meet-The-Developers.html">Meet The Developers</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <!-- Main Content -->
   <main>
     <section class="intro">
       <h1>Follow your Adventure</h1>
-      <img src="time-machine.png" alt="Time Machine" class="time-machine-img" style="width:300px;height:300px;">
+      <img src="images/time-machine.png" alt="Time Machine" class="time-machine-img" style="width:300px;height:300px;">
       <p>Where would you like the time machine take you to?</p>
     </section>
 
-    <!--Timeline of Eras -->
+    <!-- Timeline of Eras -->
     <section class="timeline">
       <div class="progression-bar">
         <div class="progression-point" id="past">
-          <button class="timeline-btn" onclick="window.location.href='n1.html'">Past - Land Before Humans</button>
+          <button class="timeline-btn" onclick="window.location.href='n1.html'">
+            Past - Land Before Humans
+          </button>
         </div>
-        
         <div class="progression-point" id="ww2">
-          <button class="timeline-btn" onclick="window.location.href='war_html/main.html'">1940 - World War II</button>
+          <button class="timeline-btn" onclick="window.location.href='war_html/main.html'">
+            1940 - World War II
+          </button>
         </div>
-        
         <div class="progression-point" id="virtual-revolution">
           <button class="timeline-btn" onclick="window.location.href='2050/2050-page.html'">
             2050 - Virtual Revolution
           </button>
         </div>
-        
         <div class="progression-point" id="space-travel">
-          <button class="timeline-btn">Future - Space Traveller</button>
+          <button class="timeline-btn">
+            Future - Space Traveller
+          </button>
         </div>
       </div>
     </section>
   </main>
 
-  <script src="script.js"> </script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
