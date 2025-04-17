@@ -33,7 +33,13 @@ height: 200px;
 margin-right: 10px;
 cursor: pointer;
 border: 2px solid black;
-background-color: transparent;
+padding: 0;
+background: transparent;
+box-sizing: border-box;
+overflow: hidden;
+transition: box-shadow 0.1s, transform 0.1s;
+display: inline-block;
+vertical-align: top;
 }
 
 .image-button img 
@@ -41,7 +47,17 @@ background-color: transparent;
 width: 100%;
 height: 100%;
 object-fit: cover;
-} 
+display: block;
+border: none;
+pointer-events: none;
+}
+
+.image-button:active 
+{
+transform: scale(0.96);
+box-shadow: 0 2px 8px rgba(0,0,0,0.2) inset;
+border-color: #555;
+}
 
 #links 
 { 
