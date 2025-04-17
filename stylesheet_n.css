@@ -142,3 +142,23 @@ cursor: pointer;
 #home-button2:hover {
 background-color: darkred;
 }
+
+#mute-button {
+position: fixed;
+top: 20px;
+right: 20px;
+z-index: 1000;
+background: rgba(255,255,255,0.7);
+border: 2px solid #222;
+border-radius: 50%;
+width: 48px;
+height: 48px;
+font-size: 24px;
+cursor: pointer;
+transition: background 0.2s;
+}
+
+#mute-button:hover {
+background: #eee;
+}
+
