@@ -1,49 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>2050-deadend.2 - Time Machine Adventures</title>
-  <link rel="stylesheet" href="../../scenario-style.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../scenario-style.css" />
 </head>
 <body onload="retrieveLastDecision()">
+  
+  <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
-      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
-      <span class="nav-title">Time Machine Adventures</span>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/coursework-test/index.html">Home</a></li>
-        <li><a href="#">Other Time Eras</a></li>
-      </ul>
+    <span class="logoI">Time Machine Adventures</span>
+    <nav class="navbarI">
+      <div class="container">
+        <button class="hamburgerI" id="hamburgerI" aria-label="Toggle Menu">
+          &#9776;
+        </button>
+        <ul class="nav-linksI hidden" id="menu">
+          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="../../Meet-The-Developers.html">Meet The Developers</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
+
+  <!-- Main Content -->
   <main>
     <section class="scenario-header">
       <h2 id="year-time">2050</h2>
       <h3 id="adventure-title">Virtual Reality Escape</h3>
-      <p class="previous-choice">Previous Choice:  The revolution succeeds; however, you and your friends are erased from the digital world. </p>
+      <p class="previous-choice">
+        Previous Choice: The revolution succeeds; however, you and your friends are erased from the digital world.
+      </p>
     </section>
+
     <section class="description-area">
       <div class="image-container">
-        <img src="../../images/game-over.jpg" alt="Scenario Image" class="scenario-image">
+        <img
+          src="../../images/game-over.jpg"
+          alt="Game Over"
+          class="scenario-image"
+        />
         <div class="overlay">
-          <p>The revolution succeeds; however, you and your friends are erased from the digital world.</p>
+          <p>
+            The revolution succeeds; however, you and your friends are erased from
+            the digital world.
+          </p>
         </div>
       </div>
     </section>
+
+    <!-- Dead End -->
     <section class="deadend-navigation">
       <div class="nav-arrow left-arrow">
-        <button class="nav-button" onclick="window.location.href='../2050-survived.1.html'">
+        <button
+          class="nav-button"
+          onclick="window.location.href='../2050-survived.1.html'"
+        >
           &larr; Back to previous choice
         </button>
       </div>
       <div class="nav-arrow right-arrow">
-        <button class="nav-button" onclick="window.location.href='../../../index.html'">
+        <button
+          class="nav-button"
+          onclick="window.location.href='../../../index.html'"
+        >
           Back to timeline &rarr;
         </button>
       </div>
     </section>
   </main>
+
+  <!-- JS -->
   <script src="../../scenario-script.js"></script>
 </body>
 </html>
