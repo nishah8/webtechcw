@@ -35,6 +35,8 @@ body {
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .home-button {
