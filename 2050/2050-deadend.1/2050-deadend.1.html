@@ -7,19 +7,21 @@
   <!-- Link to the 2050-specific CSS file -->
   <link rel="stylesheet" href="../scenario-style.css">
 </head>
-<body>
-  <!-- Header / Navigation Bar -->
+<body onload="retrieveLastDecision()">
+  <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
-      <!-- Hamburger Menu Icon -->
-      <button class="hamburger" id="hamburgerBtn">&#9776;</button>
-      <!-- Site Title -->
-      <span class="nav-title">Time Machine Adventures</span>
-      <!-- Dropdown Menu -->
-      <ul class="nav-links" id="navLinks">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="#">Other Time Eras</a></li>
-      </ul>
+    <!-- Centre Page -->
+    <span class="logoI">Time Machine Adventures</span>
+    <nav class="navbarI">
+      <div class="container">
+        <button class="hamburgerI" id="hamburgerI" aria-label="Toggle Menu">
+          &#9776;
+        </button>
+        <ul class="nav-linksI hidden" id="menu">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../Meet-The-Developers.html">Meet The Developers</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -29,14 +31,15 @@
     <section class="scenario-header">
       <h2 id="year-time">2050</h2>
       <h3 id="adventure-title">Virtual Reality Escape - Dead End</h3>
-      <p class="previous-choice">Previous Choice: You chose to live a controlled life in blissful peace.</p>
+      <p class="previous-choice">
+        Previous Choice: You chose to live a controlled life in blissful peace.
+      </p>
     </section>
 
     <!-- Description / Image Area with Overlay Text -->
     <section class="description-area">
       <div class="image-container">
-        <!-- Updated image path -->
-        <img src="../images/peaceful-life.jpg" alt="Scenario Image" class="scenario-image">
+        <img src="../images/peaceful-life.jpg" alt="Controlled Life Scenario" class="scenario-image">
         <div class="overlay">
           <p>You accepted the offer, living a controlled life in blissful peace.</p>
         </div>
@@ -46,13 +49,11 @@
     <!-- Dead End Navigation: Back to Previous Choice and Back to Timeline -->
     <section class="deadend-navigation">
       <div class="nav-arrow left-arrow">
-        <!-- Updated button path: one level up to 2050 folder -->
         <button class="nav-button" onclick="window.location.href='../2050-page.html'">
           &larr; Back to previous choice
         </button>
       </div>
       <div class="nav-arrow right-arrow">
-        <!-- Updated button path: two levels up to the root -->
         <button class="nav-button" onclick="window.location.href='../../index.html'">
           Back to timeline &rarr;
         </button>
@@ -60,7 +61,7 @@
     </section>
   </main>
 
+  <!-- Load the 2050-specific JS file -->
   <script src="../scenario-script.js"></script>
 </body>
 </html>
-
