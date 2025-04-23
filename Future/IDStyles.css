@@ -19,6 +19,7 @@ body {
 
 .choice {
     margin: 20px;
+    display: grid;
 }
 
 .choice img {
@@ -28,19 +29,7 @@ body {
     border: 2px solid white;
 }
 
-.choice button {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.home-button {
-    display: inline-block;
+button {
     padding: 10px 20px;
     margin: 20px;
     background-color: white;
@@ -51,7 +40,7 @@ body {
     font-weight: bold;
 }
 
-.home-button:hover {
+button:hover {
     background-color: black;
     color: white;
 }
